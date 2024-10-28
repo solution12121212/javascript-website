@@ -1,0 +1,297 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+header {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: 0px 10px;
+  height: 20vh;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+}
+.menuicon {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.heroSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("./img/back.jpg");
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: monospace;
+  gap: 10px;
+}
+
+.heroSection h1 {
+  text-align: center;
+  font-size: 5vw;
+}
+
+.heroSection p {
+  font-size: 3vw;
+}
+
+.heroSection button {
+  border: none;
+  background-color: rgba(0, 128, 0, 0.274);
+  padding: 20px 40px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 20px;
+  padding: 40px 5px;
+}
+
+.about h3 {
+  font-size: 50px;
+  font-family: serif;
+}
+figure {
+  border: 1px solid black;
+  margin: 10px;
+  width: 350px;
+}
+.figure {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.figure p {
+}
+
+figcaption {
+  text-align: left;
+  padding: 10px 15px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  width: 120px;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: space-between;
+}
+.icons a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: white;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactAddress {
+  height: 60vh;
+  width: 100%;
+}
+.contactAddress h1 {
+  text-align: center;
+}
+.contact {
+  height: 100%;
+  width: 50%;
+}
+.contactAddress form fieldset {
+  height: 100%;
+  width: 100%;
+}
+.contactAddress input {
+}
+
+.social {
+  padding: 20px 0px;
+  border-bottom: 1px solid white;
+}
+.social h3 {
+  margin: 0px 0px;
+  font-size: 25px;
+  color: white;
+}
+footer p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+footer {
+  height: 35vh;
+  background-color: rgba(51, 128, 0, 0.808);
+  padding: 0px 10px;
+}
+.social {
+  padding: 20px 0px;
+  border-bottom: 1px solid white;
+}
+footer > p {
+  text-align: center;
+  color: #fff;
+}
+.about h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.about section {
+  height: 60vh;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.about section img {
+  height: 100%;
+  width: 45%;
+  display: flex;
+}
+.about section article {
+  display: flex;
+  height: 100%;
+  width: 45%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about article button {
+  width: 100px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+.contact {
+  text-align: center;
+}
+.contactAddress {
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+  margin: 50px;
+}
+.Address {
+  border: 1px solid black;
+  gap: 30px;
+  width: 45%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+.Address {
+  font-size: 20px;
+}
+.testimonial {
+  display: flex;
+  height: 80vh;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.testifier {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.testimony figcaption {
+  padding: 10px;
+  text-align: center;
+}
+.testimony figcaption {
+  margin: 10px;
+  font-size: 18px;
+}
+.testimonial figcaption p {
+  text-align: start;
+}
+
+.sponsor {
+  height: 60vh;
+}
+.sponsor h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(16, 15, 15);
+}
+.sponsor figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+}
+.sponsor figure img {
+  gap: 5px;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about,.services,.contact {
+ 98   padding: 70px 20px;
+  }
+
+  .aboutsection {
+    height: 70vh;
+  }
+  .fig{
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 10px;
+  }
+  .fig figure{
+    height: 80vh;
+    font-size: 15px;
+    width: 45%;
+  }
+  .about article {
+    width: 50%;
+    font-size: 15px;
+  }
+  .second-para {
+    display: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+.about section {
+  flex-direction: column;
+  gap: 20px;
+  height: fit-content;
+}
+.about section img{
+  width: 100%;
+}
+.about section article{
+  width: 100px;
+  gap: 10px;
+
+}
+nav{
+  display: none;
+}
+.menuicon{
+  display: block;
+  font-size: 20px;
+}
+.fig figure{
+  width: 100%;
+  display: block;
+}
